@@ -14,3 +14,10 @@ deployment "complex" {
     instances        = 5
   }
 }
+
+deployment "wacker" {
+  inputs = {
+    prefix           = "wacker"
+    instances        = 7
+  }
+}
