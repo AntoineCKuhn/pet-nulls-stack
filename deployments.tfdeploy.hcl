@@ -21,3 +21,10 @@ deployment "test" {
     instances        = 5
   }
 }
+
+orchestrate "auto_approve" "no_pet_changes" {
+    check {
+        condition = context.plan.component_changes["component.pet"].total == 0
+        reason = "Not automatically approved because changes proposed to pet component."
+    }
+}
