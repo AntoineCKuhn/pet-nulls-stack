@@ -15,13 +15,6 @@ deployment "complex" {
   }
 }
 
-deployment "test" {
-  inputs = {
-    prefix           = "test"
-    instances        = 5
-  }
-}
-
 orchestrate "auto_approve" "no_pet_changes" {
     check {
         condition = context.plan.component_changes["component.pet"].total == 0
