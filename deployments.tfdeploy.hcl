@@ -15,12 +15,6 @@ deployment "complex" {
   }
 }
 
-deployment "bitpanda" {
-  inputs = {
-    prefix           = "bitpanda"
-    instances        = 10
-  }
-}
 
 orchestrate "auto_approve" "no_pet_changes" {
     check {
