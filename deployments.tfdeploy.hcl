@@ -18,7 +18,7 @@ deployment "complex" {
 deployment "andsafe" {
   inputs = {
     prefix           = "complex"
-    instances        = 11
+    instances        = 5
   }
 }
 
