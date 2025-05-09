@@ -15,6 +15,13 @@ deployment "complex" {
   }
 }
 
+deployment "andsafe" {
+  inputs = {
+    prefix           = "complex"
+    instances        = 8
+  }
+}
+
 
 orchestrate "auto_approve" "no_pet_changes" {
     check {
